@@ -33,23 +33,6 @@
     <!--bottom taskbar-->
     <nav class="navbar fixed-bottom navbar-dark" style="background-color: rgba(25, 2, 84, 0.6); height: 50px;">
 
-        <div id="main_Menu">
-            <img onclick="toggleMenu()" src="https://img.icons8.com/dusk/40/000000/color-widgets.png" />
-
-        </div>
-
-
-        <div id="myMenu" class="menu" style="height: 0%; width: 0%;">
-
-            <div class="d-grid gap-3">
-                <div id="myImageDiv"> <img src="picrewme.png" id="myImage" onclick="openMyPic()"> </div>
-
-                <button class="menuButton" type="button" onclick="openAbout()">About me</button>
-                <button class="menuButton" type="button" onclick="openFolder('myFolder')">My work</button>
-                <button class="menuButton" type="button" onclick="openLeave()">Leave this site</button>
-            </div>
-
-        </div>
     </nav>
 
     <!--APPZ-->
@@ -65,12 +48,7 @@
             </div>
 
             <div class="col" style="color: antiquewhite;">
-                <div>
-                    <img class="icon" onclick="openPaint()" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/90/000000/drawing.png" />
-
-                </div>
-                create
-            </div>
+              
 
             <div class="col" style="color: antiquewhite;">
                 <div>
@@ -119,31 +97,7 @@
         <div class="col">
 
          wot u wan2 do-->
-            <div class="popup" id="popupWhatDo" style="display: none;">
-                <div class="row">
-                    <div class="col col-8">Attention!</div>
-                    <div class="col">
-                        <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWhatDo')" style="background: red;"></button>
-                    </div>
-
-
-                </div>
-                <div class="txtbox">
-                    <p>What do you want to do?</p>
-                    <div class="d-grid gap-2">
-
-                        <button class="button" type="button" onclick="openAbout()">know about me ;)</button>
-                        <button class="button" type="button" onclick="openFolder('myFolder')">see my work</button>
-                        <button class="button" type="button" onclick="openContact()">contact me</button>
-                        <button class="button" type="button" onclick="closePopUp('popupWhatDo')">nothing</button>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
+        
 
 
 
@@ -180,106 +134,9 @@
 
                     </div>
                 </div>
-                <div class="col" style="text-align: center;">
-                    <p>Hi there! My name is Swaathy Kumar. I am a second year CSE student at VIT University. Currently due to the pandemic I've been stuck at home for about 16 months now, having an existential crisis and attending online classes. So I decided
-                        to make this site for fun and hopefully display my upcoming projects in the form of apps here. Annnnnnnnnd thats pretty much it. Thanks for checking out this site 🥰
-
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    CONTACTY ME--
-
-    <div class="popupWindow" id="myContact" style="display: none; padding-bottom: 0%;">
-        <div class="row">
-            <div class="col col-8">My Socials</div>
-            <div class="col">
-
-                <button class="close" aria-label="Close" type="button" onclick="closePopUp('myContact')" style="background: red;"></button>
-            </div>
-        </div>
-        <div class="txtbox">
-
-            <div class="row" style=" padding: 5px;">
-                <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/twitter-circled.png" /></div>
-                <div class="col-8" style="padding: 10px;">
-                    <p><a href="https://twitter.com/tinycoder2">contact me on Twitter</a></p>
-                </div>
-            </div>
-            <div class="row" style="padding: 5px; border-top: 2px dashed pink;">
-                <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/linkedin.png" /></div>
-                <div class="col-8" style="padding: 10px;">
-                    <p><a href="https://www.linkedin.com/in/swaathykumar">contact me on LinkedIn</a></p>
-                </div>
-            </div>
-            <div class="row" style="padding: 5px; border-top: 2px dashed pink;">
-                <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/github.png" /></div>
-                <div class="col-8" style="padding: 10px;">
-                    <p><a href="https://github.com/tinycoder2">check out my Github</a></p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="popup" id="myImagePopUp" style="display: none;">
-        <div class="row">
-            <div class="col col-8">me.jpeg</div>
-            <div class="col">
-                <button class="close" aria-label="Close" type="button" onclick="closePopUp('myImagePopUp')" style="background: red;"></button>
-            </div>
-
-        </div>
-
-
-        <div class="txtbox" style="overflow: hidden; padding: 0.3rem;">
-            <img src="picrewme.png">
-        </div>
-    </div>
+               
 !--ME JPG-->
-
-    <!--ERROR-
-
-    <div class="popup" id="popupLeave" style="display: none;">
-        <div class="row">
-            <div class="col col-8"> Error! </div>
-            <div class="col">
-
-                <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupLeave')" style="background: red;"></button>
-            </div>
-        </div>
-        <div class="txtbox">
-            <p><img src="https://img.icons8.com/dusk/50/000000/error.png" /></p>
-            <p>Exit denied.</p>
-            <p>( plis don't go 👉👈 )</p>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2" style="margin: 2px 2px;">
-                <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupLeave')">dude leave me alone</button> </div>
-                <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%; max-height: 60px;" onclick="closePopUp('popupLeave')">ok 🗿</button> </div>
-
-            </div>
-
-
-        </div>
-    </div>
-!--ME JPG-->
-    <!--paint-->
-    <div class="popupWindow popupApp" id="paintApp" style="display: none;">
-        <div class="row">
-            <div class="col col-8">paint</div>
-            <div class="col">
-                <button class="close" aria-label="Close" type="button" onclick="closePaint()" style="background: red;"></button>
-            </div>
-        </div>
-        <iframe class="responsive-iframe" style="height:96%; width:100%" src="https://jspaint.app/"></iframe>
-
-
-    </div>
-
-    <!--MUJIKKK-->
+   
     <div class="popupWindow popupApp" id="musicApp" style="display: none; height: 85%;width: 90%; margin: 5%;">
         <div class="row">
             <div class="col col-8">music</div>
@@ -293,8 +150,6 @@
     </div>
 
 
-
-    <!--main menu sry lol havent changed the names properly-->
     <div id="mySidebar" class="sidebar" style="display: none;">
         <div class="row" style="background-color: #52527a;">
             <div class="col col-8" style="margin-left: 5px; color: white;"> Messages from author </div>
