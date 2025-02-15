@@ -365,11 +365,11 @@ root {
 	
 	/* Slightly smaller cards for Levels 3+ to prevent overflow */
 	.level-3 .card,
-	.level-4 .card {
-	width: 5.5em;
-	height: 5.5em;
-	max-width: 95px;
-	max-height: 95px;
+	.level-4 .card
+	{
+	width:5em;
+	height:5em;
+	
 	}
 	
 	/* Mobile adjustments */
@@ -388,6 +388,7 @@ root {
 	.level-2 { --columns: 4; --rows: 4; }
 	.level-3 { --columns: 4; --rows: 4; }
 	.level-4 { --columns: 4; --rows: 5; }
+	.level-5 { --columns: 6; --rows: 5; }
 
 html, body {
     overflow: hidden; /* Prevents scrolling */
