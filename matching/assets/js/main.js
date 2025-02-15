@@ -126,11 +126,7 @@ class AudioController {
             // Duplicate the array for level 4
             return imagesLevel4.concat(imagesLevel4); // Concatenate to duplicate the array
   
-        case 5:
-            // Define the image URLs for level 5
-            let imagesLevel5 = ["URL17", "URL18", "URL19", ];
-            // Duplicate the array for level 5
-            return imagesLevel5.concat(imagesLevel5); // Concatenate to duplicate the array
+      
   
         
     }
@@ -150,10 +146,10 @@ class AudioController {
         <div class="card">
             <div class="card-back card-face">
                 <img src="assets/images
-  /dog.JPG" alt="card ack" class="card-img">
+  /dog.JPG" alt="nono image" class="card-img">
             </div>
             <div class="card-front card-face">
-                <img class="card-value card-img" src="${href}" alt="jungle-books-image">
+                <img class="card-value card-img" src="${href}" alt="nono image">
             </div>
         </div>`);
     
@@ -362,7 +358,7 @@ class AudioController {
     document.getElementById('level-up-popup').classList.remove('active');
     this.currentLevel++;
 
-    if (this.currentLevel > 5) {
+    if (this.currentLevel > 4 {
         this.victory();
         this.currentLevel = 1;
     } else {
