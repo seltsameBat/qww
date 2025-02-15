@@ -358,7 +358,7 @@ class AudioController {
     document.getElementById('level-up-popup').classList.remove('active');
     this.currentLevel++;
 
-    if (this.currentLevel > 4 {
+    if (this.currentLevel > 4) {
         this.victory();
         this.currentLevel = 1;
     } else {
